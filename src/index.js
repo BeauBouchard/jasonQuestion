@@ -24,9 +24,8 @@ function compute(twoDimensionalArray, number) {
       }
     }
 
-    // Absolute difference of the sums
-    // across the diagonals
-    return Math.abs(diagValue1 - diagValue2);
+    // difference of two sums
+    return diagValue1 - diagValue2;
 }
 
 module.exports.default = compute;
