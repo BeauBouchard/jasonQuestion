@@ -11,8 +11,7 @@ function compute(twoDimensionalArray, number) {
     let diagValue2 = 0;
 
     for (let i = 0; i < number; i++) {
-      for (let j = 0; j < number; j++)
-      {
+      for (let j = 0; j < number; j++) {
         // finding sum of primary diagonal
         if (i == j) {
           diagValue1 += twoDimensionalArray[i][j];
@@ -38,5 +37,8 @@ const exampleTwoArray = [
   [7, -8, -9, 6],
   [6, 5, 4, 3]
 ];
+
 console.log("Example 2");
+console.log(`input exampleTwoNum:${exampleTwoNum}`);
+console.log(`input exampleTwoArray:${exampleTwoArray}`);
 console.log(compute(exampleTwoArray, exampleTwoNum));

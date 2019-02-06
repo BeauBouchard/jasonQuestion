@@ -1,0 +1,8 @@
+version: '3'
+services:
+  jason:
+    container_name: jason
+    build: .
+    command: ["npm", "run-script", "start"]
+    volumes:
+      - ${PWD}:/usr/src/app
