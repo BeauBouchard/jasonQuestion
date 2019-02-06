@@ -7,7 +7,6 @@
     "test": "tests"
   },
   "scripts": {
-    "start": "src/index.js",
     "test": "node_modules/.bin/mocha tests/. --recursive"
   },
   "repository": {
