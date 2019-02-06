@@ -9,6 +9,6 @@ node_js:
   - "10.15.0"
 
 before_install:
-  - docker build -t beaubouchard/jasonQuestion .
+  - docker build -t beaubouchard/jasonquestion .
 script:
-  - docker run beaubouchard/jasonQuestion npm run test
+  - docker run beaubouchard/jasonquestion npm run test
