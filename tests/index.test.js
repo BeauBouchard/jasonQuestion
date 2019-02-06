@@ -15,11 +15,12 @@ describe('NxN', () => {
       [6, 5, 4, 3]
     ];
 
+    const expectedExampleTwoOutput = 12;
+
     console.log("Example 2");
     console.log(`input exampleTwoNum:${inspect(exampleTwoNum)}`);
     console.log(`input exampleTwoArray:${inspect(exampleTwoArray)}`);
 
-
-    compute(exampleTwoArray, exampleTwoNum);
+    expect(compute(exampleTwoArray, exampleTwoNum)).to.equal(expectedExampleTwoOutput);
   });
 });
