@@ -1,0 +1,14 @@
+sudo: required
+
+services:
+  - docker
+
+language: node_js
+
+node_js:
+  - "10.15.0"
+
+before_install:
+  - docker build -t beaubouchard/jasonQuestion .
+script:
+  - docker run beaubouchard/jasonQuestion npm run test
