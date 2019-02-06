@@ -4,7 +4,7 @@ const { inspect } = require('util');
 const compute = require('../src').default;
 
 const { expect } = chai;
-describe('NxN', () => {
+describe('NxN Function Test', () => {
   it('Example 1 should equal -4', () => {
 
     /**
@@ -32,9 +32,9 @@ describe('NxN', () => {
 
     const expectedExampleOneOutput = -4;
 
-    console.log("Example 2");
-    console.log(`input exampleTwoNum:${inspect(exampleOneNum)}`);
-    console.log(`input exampleTwoArray:${inspect(exampleOneArray)}`);
+    console.log("Example 1\n");
+    console.log(`input exampleOneNum:${inspect(exampleOneNum)}\n`);
+    console.log(`input exampleOneArray:${inspect(exampleOneArray)}\n`);
 
     expect(compute(exampleOneArray, exampleOneNum)).to.equal(expectedExampleOneOutput);
   });
@@ -50,9 +50,9 @@ describe('NxN', () => {
 
     const expectedExampleTwoOutput = -12;
 
-    console.log("Example 2");
-    console.log(`input exampleTwoNum:${inspect(exampleTwoNum)}`);
-    console.log(`input exampleTwoArray:${inspect(exampleTwoArray)}`);
+    console.log("Example 2\n");
+    console.log(`input exampleTwoNum:${inspect(exampleTwoNum)}\n`);
+    console.log(`input exampleTwoArray:${inspect(exampleTwoArray)}\n`);
 
     expect(compute(exampleTwoArray, exampleTwoNum)).to.equal(expectedExampleTwoOutput);
   });
